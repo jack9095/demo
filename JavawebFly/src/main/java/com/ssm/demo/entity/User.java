@@ -1,21 +1,24 @@
 package com.ssm.demo.entity;
 
+/**
+ * https://blog.csdn.net/qq_23994787/article/details/73612870
+ */
 public class User {
 
     // 下面都是数据库表中每一列字段
-    private int user_id;
+    private int id;
     private String name;
-    private int age;
-    private int sex;
-    private String create_time;
-    private String _timestamp;
+    private String pwd;
+    private String sex;
+    private String home;
+    private String info;
 
-    public int getUser_id() {
-        return user_id;
+    public int getId() {
+        return id;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -26,47 +29,35 @@ public class User {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public String getPwd() {
+        return pwd;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
     }
 
-    public int getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(int sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
-    public String getCreate_time() {
-        return create_time;
+    public String getHome() {
+        return home;
     }
 
-    public void setCreate_time(String create_time) {
-        this.create_time = create_time;
+    public void setHome(String home) {
+        this.home = home;
     }
 
-    public String get_timestamp() {
-        return _timestamp;
+    public String getInfo() {
+        return info;
     }
 
-    public void set_timestamp(String _timestamp) {
-        this._timestamp = _timestamp;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "user_id=" + user_id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", sex=" + sex +
-                ", create_time='" + create_time + '\'' +
-                ", _timestamp='" + _timestamp + '\'' +
-                '}';
+    public void setInfo(String info) {
+        this.info = info;
     }
 }

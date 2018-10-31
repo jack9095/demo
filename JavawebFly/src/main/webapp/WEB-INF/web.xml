@@ -4,4 +4,65 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.ssm.demo.filter.EncodingFilter</filter-class><!--全路径 从根包开始一直到类名-->
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern> <!--*即为过滤所有-->
+  </filter-mapping>
+
+
+  <!--servlet类路径配置-->
+  <servlet>
+    <servlet-name>DengluServlet</servlet-name>
+    <servlet-class>com.ssm.demo.servlet.DengluServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <servlet-class>com.ssm.demo.servlet.ZhuceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Searchall</servlet-name>
+    <servlet-class>com.ssm.demo.servlet.Searchall</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.ssm.demo.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.ssm.demo.servlet.UpdateServlet</servlet-class>
+  </servlet>
+
+
+  <!--servlet类映射配置-->
+  <servlet-mapping>
+    <servlet-name>DengluServlet</servlet-name>
+    <url-pattern>/DengluServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ZhuceServlet</servlet-name>
+    <url-pattern>/ZhuceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Searchall</servlet-name>
+    <url-pattern>/Searchall</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <!--默认首页地址-->
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
 </web-app>
