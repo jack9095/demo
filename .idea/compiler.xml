@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="DesignPatternA" />
         <module name="JavawebFly" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="DesignPatternA" target="1.5" />
+      <module name="DesignPatternf" target="1.7" />
       <module name="JavawebFly" target="1.7" />
     </bytecodeTargetLevel>
   </component>
