@@ -11,8 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DesignPatternA" target="1.5" />
-      <module name="DesignPatternf" target="1.7" />
+      <module name="DesignPatternA" target="1.8" />
       <module name="JavawebFly" target="1.7" />
     </bytecodeTargetLevel>
   </component>
