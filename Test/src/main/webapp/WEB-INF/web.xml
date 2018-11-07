@@ -19,6 +19,7 @@
 
   <!--默认首页地址-->
   <welcome-file-list>
-    <welcome-file>JspLift.jsp</welcome-file>
+    <!--<welcome-file>JspLift.jsp</welcome-file>-->
+    <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 </web-app>
