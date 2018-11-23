@@ -24,7 +24,6 @@ public class Test {
         ProductService proxy = (ProductService) jdkInvocationHandler.getInstance(productService);
         proxy.addProduct("金融");
 
-
         // 这里我们将jdk生成的代理类输出了出来，方便后面分析使用
         byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy0",new Class[]{productService.getClass()});
 

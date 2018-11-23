@@ -1,7 +1,7 @@
 package Java.dynamicproxy.one;
 
 /**
- * 被代理的接口
+ * 被代理对象实现的接口
  */
 public interface ProductService {
 
